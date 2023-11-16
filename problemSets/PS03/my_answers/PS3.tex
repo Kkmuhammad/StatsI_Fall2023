@@ -95,7 +95,7 @@
 		\lstinputlisting[language=R, firstline=45, lastline=48]{PS3.R}  
 		
 		
-		\begin{figure}[h!]\centering	\caption{\footnotesize Scatterplot of relationship between $Y, X_1$.}	
+		\begin{figure}[h!]\centering	\caption{\footnotesize Scatterplot of relationship between $voteshare, difflog$.}	
 		
 		\includegraphics[width=.85\textwidth]{plot1.pdf}
 		
@@ -105,8 +105,12 @@
 		
 		\vspace*{2cm}
 		
-		\item Save the residuals of the model in a separate object.	\vspace{7cm}
+		\item Save the residuals of the model in a separate object.			
+		\lstinputlisting[language=R, firstline=51, lastline=51]{PS3.R}
+		
 		\item Write the prediction equation.
+		
+		voteshare = \textit{B1} +\textit{B2} * difflog 
 	\end{enumerate}
 	
 \newpage
@@ -135,12 +139,18 @@
 			
 		\end{figure}
 		
+		\newpage	
+		\item Save the residuals of the model in a separate object.
 		
-		\item Save the residuals of the model in a separate object.	\vspace{5cm}
+		\lstinputlisting[language=R, firstline=70, lastline=70]{PS3.R}
+		
+		
 		
 		
 		\item Write the prediction equation.
 		
+		
+		presvote = \textit{B1} +\textit{B2} * difflog
 		
 		
 	\end{enumerate}
@@ -153,17 +163,25 @@
 	\vspace{.25cm}
 	\begin{enumerate}
 		\item Run a regression where the outcome variable is \texttt{voteshare} and the explanatory variable is \texttt{presvote}.
+			\textbf{		The R script for regression is:}
+		\lstinputlisting[language=R, firstline=76, lastline=77]{PS3.R}  
 		
-		
-			\vspace{5cm}
+
 			
 			
 		\item Make a scatterplot of the two variables and add the regression line. 
-			\vspace{5cm}
 			
 			
+			\lstinputlisting[language=R, firstline=80, lastline=83]{PS3.R} 
+				\begin{figure}[h!]\centering	\caption{\footnotesize Scatterplot of relationship between $voteshare, presvote$.}	
+				
+				\includegraphics[width=.7\textwidth]{plot3.pdf}
+				
+			\end{figure}
 			
 		\item Write the prediction equation.
+		
+		voteshare = \textit{B1} + \textit{B2} * presvote
 		
 		
 		
@@ -177,15 +195,29 @@
 \section*{Question 4}
 \noindent The residuals from part (a) tell us how much of the variation in \texttt{voteshare} is $not$ explained by the difference in spending between incumbent and challenger. The residuals in part (b) tell us how much of the variation in \texttt{presvote} is $not$ explained by the difference in spending between incumbent and challenger in the district.
 	\begin{enumerate}
-		\item Run a regression where the outcome variable is the residuals from Question 1 and the explanatory variable is the residuals from Question 2.	\vspace{6cm}
+		\item Run a regression where the outcome variable is the residuals from Question 1 and the explanatory variable is the residuals from Question 2.
+		
+		\textbf{		The R script for regression is:}
+		\lstinputlisting[language=R, firstline=91, lastline=92]{PS3.R} 
 		
 		
+		\item Make a scatterplot of the two residuals and add the regression line. 
 		
 		
-		\item Make a scatterplot of the two residuals and add the regression line. 	\vspace{6cm}
+		\lstinputlisting[language=R, firstline=95, lastline=98]{PS3.R}  
+		
+		
+		\begin{figure}[h!]\centering	\caption{\footnotesize Scatterplot of relationship between $res1, res2$.}	
+			
+			\includegraphics[width=.7\textwidth]{plot4.pdf}
+			
+		\end{figure}
 		
 		
 		\item Write the prediction equation.
+	
+	
+	res1 = \textit{B1} + \textit{B2} * res2
 	
 	
 	\end{enumerate}
@@ -195,12 +227,18 @@
 \section*{Question 5}
 \noindent What if the incumbent's vote share is affected by both the president's popularity and the difference in spending between incumbent and challenger? 
 	\begin{enumerate}
-		\item Run a regression where the outcome variable is the incumbent's \texttt{voteshare} and the explanatory variables are \texttt{difflog} and \texttt{presvote}.	\vspace{5cm}
+		\item Run a regression where the outcome variable is the incumbent's \texttt{voteshare} and the explanatory variables are \texttt{difflog} and \texttt{presvote}.
 	
 	
-		\item Write the prediction equation.	\vspace{5cm}
+		\textbf{		The R script for regression is:}
+		\lstinputlisting[language=R, firstline=104, lastline=105]{PS3.R} 
 	
 	
+	
+		\item Write the prediction equation.
+	
+	
+		voteshare = \textit{B1} + \textit{B2} * difflog + \textit{B3} * presvote
 	
 		\item What is it in this output that is identical to the output in Question 4? Why do you think this is the case?
 	

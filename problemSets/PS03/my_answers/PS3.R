@@ -69,3 +69,38 @@ dev.off()
 #2.3
 res2 <- residuals(model2)
 
+### Question 3
+
+#3.1
+
+model3 <- lm(voteshare~presvote, data= inc.sub)
+summary(model3)
+
+#3.2
+pdf("plot3.pdf", width=8)
+plot(inc.sub$presvote,inc.sub$voteshare)
+abline(model3)
+dev.off()
+
+
+
+### Question 4
+
+#4.1
+
+model4 <- lm(res1~res2)
+summary(model4)
+
+#4.2
+pdf("plot4.pdf", width=8)
+plot(res2,res1)
+abline(model4)
+dev.off()
+
+### Question 5
+
+#5.1
+
+model5 <- lm(voteshare~difflog+presvote, data= inc.sub)
+summary(model5)
+
