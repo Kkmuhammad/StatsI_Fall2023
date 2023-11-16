@@ -64,6 +64,8 @@ plot(inc.sub$difflog,inc.sub$presvote)
 abline(model2)
 dev.off()
 
+
+
 #2.3
 res2 <- residuals(model2)
 
