@@ -89,6 +89,8 @@
 \textbf{		The R script for regression is:}
 		\lstinputlisting[language=R, firstline=41, lastline=42]{PS3.R}  
 		
+		The intercept is 0.579 while the slope of this regression line is 0.041. The R squared value of 0.37 means that around 37 percent of the variability in the voteshare (response variable) can be explained by difflog (explanatory variable). The p-value shows that the difference in campaign spending between incumbent and challenger is a significant predictor of incumbents' vote share.
+		
 		
 		\item Make a scatterplot of the two variables and add the regression line. 
 		
@@ -101,16 +103,21 @@
 		
 		\end{figure}
 		
-		The above scatter shows bgnuifdkmsas
+		The above scatter plot shows a positive linear relationship between the variables.    
 		
 		\vspace*{2cm}
 		
 		\item Save the residuals of the model in a separate object.			
 		\lstinputlisting[language=R, firstline=51, lastline=51]{PS3.R}
 		
+		The negative residual value shows that the model overestimates the incumbents' vote share and it is less than predicted by the model. 
+		
 		\item Write the prediction equation.
 		
-		voteshare = \textit{B1} +\textit{B2} * difflog 
+		voteshare = \textit{B0} +\textit{B1} * difflog
+		
+		The intercept is 0.579 while the slope of this regression line is 0.041 which means that with every percentage point increase in the difference of campaign spending between incumbent and challenger, we would expect the percentage increase in voteshare to be increased by 0.041 percent points.
+		 
 	\end{enumerate}
 	
 \newpage
@@ -126,7 +133,7 @@
 		\lstinputlisting[language=R, firstline=58, lastline=59]{PS3.R}  
 		
 		
-
+		The intercept is 0.507 while the slope of this regression line is 0.024. The R squared value of 0.087 means that around 9 percent of the variability in the presvote (response variable) can be explained by difflog (explanatory variable). The p-value shows that the difference in campaign spending between incumbent and challenger is a significant predictor of presvote.
 		
 		\item Make a scatterplot of the two variables and add the regression line. 
 		
@@ -135,23 +142,26 @@
 		
 		\begin{figure}[h!]\centering	\caption{\footnotesize Scatterplot of relationship between $Y, X_2$.}	
 			
-			\includegraphics[width=.7\textwidth]{plot2.pdf}
+			\includegraphics[width=.6\textwidth]{plot2.pdf}
 			
 		\end{figure}
+		
+		The above scatter plot shows a positive linear relationship between the variables.
 		
 		\newpage	
 		\item Save the residuals of the model in a separate object.
 		
 		\lstinputlisting[language=R, firstline=70, lastline=70]{PS3.R}
 		
-		
+		The positive residual value shows that the model underestimates the presvote  and it is more than predicted by the model. 
 		
 		
 		\item Write the prediction equation.
 		
 		
-		presvote = \textit{B1} +\textit{B2} * difflog
+		presvote = \textit{B0} +\textit{B1} * difflog
 		
+		The intercept is 0.507 while the slope of this regression line is 0.024 which means that with every percentage point increase in the difference of campaign spending between incumbent and challenger, we would expect the percentage increase in presvote to be increased by 0.024 percent points.
 		
 	\end{enumerate}
 	
@@ -166,7 +176,7 @@
 			\textbf{		The R script for regression is:}
 		\lstinputlisting[language=R, firstline=76, lastline=77]{PS3.R}  
 		
-
+		The intercept is 0.441 while the slope of this regression line is 0.388. The R squared value of 0.20 means that around 20 percent of the variability in the voteshare (response variable) can be explained by presvote (explanatory variable). The p-value shows that the difference in campaign spending between incumbent and challenger is a significant predictor of incumbents' vote share.
 			
 			
 		\item Make a scatterplot of the two variables and add the regression line. 
@@ -175,15 +185,19 @@
 			\lstinputlisting[language=R, firstline=80, lastline=83]{PS3.R} 
 				\begin{figure}[h!]\centering	\caption{\footnotesize Scatterplot of relationship between $voteshare, presvote$.}	
 				
-				\includegraphics[width=.7\textwidth]{plot3.pdf}
+				\includegraphics[width=.65\textwidth]{plot3.pdf}
 				
 			\end{figure}
 			
+			
+			The above scatter plot shows a positive linear relationship between the variables.
+			
+			
 		\item Write the prediction equation.
 		
-		voteshare = \textit{B1} + \textit{B2} * presvote
+		voteshare = \textit{B0} + \textit{B1} * presvote
 		
-		
+		The intercept is 0.441 while the slope of this regression line is 0.388 which means that with every percentage point increase in the presvote, we would expect the percentage increase in voteshare to be increased by 0.388 percent points.
 		
 		
 		
@@ -192,6 +206,7 @@
 	
 
 \newpage	
+
 \section*{Question 4}
 \noindent The residuals from part (a) tell us how much of the variation in \texttt{voteshare} is $not$ explained by the difference in spending between incumbent and challenger. The residuals in part (b) tell us how much of the variation in \texttt{presvote} is $not$ explained by the difference in spending between incumbent and challenger in the district.
 	\begin{enumerate}
@@ -200,6 +215,8 @@
 		\textbf{		The R script for regression is:}
 		\lstinputlisting[language=R, firstline=91, lastline=92]{PS3.R} 
 		
+		
+		Both the intercept and slope are having very smaller values. The multiple R squared value of 0.13 means that around 13 percent of the variability in the 1st residual (response variable) can be explained by 2nd residual (explanatory variable). The p-value shows that residual 2 is a significant predictor of residual 1.
 		
 		\item Make a scatterplot of the two residuals and add the regression line. 
 		
@@ -213,12 +230,16 @@
 			
 		\end{figure}
 		
+		The above scatter plot shows a positive linear relationship between the variables.
+		
 		
 		\item Write the prediction equation.
 	
 	
-	res1 = \textit{B1} + \textit{B2} * res2
+	res1 = \textit{B0} + \textit{B1} * res2
 	
+	
+	The intercept and slope of this regression line is very smaller which means that with every percentage point increase in the residual2, we would expect a tiny percentage increase in residual1.
 	
 	\end{enumerate}
 	
@@ -234,15 +255,19 @@
 		\lstinputlisting[language=R, firstline=104, lastline=105]{PS3.R} 
 	
 	
+		The intercept is 0.448 while the slopes are 0.0355 and 0.256 respectively. The R squared value of 0.45 means that around 45 percent of the variability in the voteshare (response variable) can be explained by presvote and difference in campaign spending between incumbents and challenger (explanatory variables). The p-value shows that the difference in campaign spending between incumbent and challenger and presvote are significant predictors of incumbents' vote share.
 	
 		\item Write the prediction equation.
 	
 	
-		voteshare = \textit{B1} + \textit{B2} * difflog + \textit{B3} * presvote
+		voteshare = \textit{B0} + \textit{B1} * difflog + \textit{B2} * presvote
+	
+		The intercept is 0.448 while the slope of 0.0355 and 0.256 means that with every percentage point increase in the difference in campaign spending between the incumbent and challenger, we would expect the percentage increase in voteshare to be increased by 0.0355 percent points while with every percentage point increase in the presvote, we would expect the percentage increase in voteshare to be increased by 0.256 percentage points.
+	
 	
 		\item What is it in this output that is identical to the output in Question 4? Why do you think this is the case?
 	
-	
+		In both Question 4 and Question 5, although the p-value indicates that there is a significant relationship between the explanatory and response variables, the R squared value and multiple R squared values are low which indicates that there are other variables that may have a significant impact on the incumbents' vote share.   
 	
 	\end{enumerate}
 

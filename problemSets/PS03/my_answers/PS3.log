@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.6)  16 NOV 2023 21:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.6)  17 NOV 2023 05:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -908,47 +908,47 @@ File: omlcmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 41.
-) (./PS3.R)
-<plot1.pdf, id=7, 578.16pt x 505.89pt>
+) (./PS3.R
+[1
+
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
+al/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}])
+<plot1.pdf, id=25, 578.16pt x 505.89pt>
 File: plot1.pdf Graphic file (type pdf)
 <use plot1.pdf>
-Package pdftex.def Info: plot1.pdf  used on input line 100.
+Package pdftex.def Info: plot1.pdf  used on input line 102.
 (pdftex.def)             Requested size: 399.29463pt x 349.38095pt.
+
+(./PS3.R) [2 <./plot1.pdf>] [3] (./PS3.R) (./PS3.R)
+<plot2.pdf, id=51, 578.16pt x 505.89pt>
+File: plot2.pdf Graphic file (type pdf)
+<use plot2.pdf>
+Package pdftex.def Info: plot2.pdf  used on input line 145.
+(pdftex.def)             Requested size: 281.85587pt x 246.6223pt.
+ [4 <./plot2.pdf>] (./PS3.R) [5] (./PS3.R) (./PS3.R)
+<plot3.pdf, id=81, 578.16pt x 505.89pt>
+File: plot3.pdf Graphic file (type pdf)
+<use plot3.pdf>
+Package pdftex.def Info: plot3.pdf  used on input line 188.
+(pdftex.def)             Requested size: 305.33789pt x 267.17094pt.
+ [6 <./plot3.pdf>] [7] (./PS3.R) (./PS3.R)
+<plot4.pdf, id=108, 578.16pt x 505.89pt>
+File: plot4.pdf Graphic file (type pdf)
+<use plot4.pdf>
+Package pdftex.def Info: plot4.pdf  used on input line 229.
+(pdftex.def)             Requested size: 328.82707pt x 287.71959pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[1
-
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-(./PS3.R) [2 <./plot1.pdf>] (./PS3.R) (./PS3.R)
-<plot2.pdf, id=47, 578.16pt x 505.89pt>
-File: plot2.pdf Graphic file (type pdf)
-<use plot2.pdf>
-Package pdftex.def Info: plot2.pdf  used on input line 138.
-(pdftex.def)             Requested size: 328.82707pt x 287.71959pt.
- [3 <./plot2.pdf>] (./PS3.R)
-[4] (./PS3.R) (./PS3.R)
-<plot3.pdf, id=77, 578.16pt x 505.89pt>
-File: plot3.pdf Graphic file (type pdf)
-<use plot3.pdf>
-Package pdftex.def Info: plot3.pdf  used on input line 178.
-(pdftex.def)             Requested size: 328.82707pt x 287.71959pt.
- [5 <./plot3.pdf>] (./PS3.R) (./PS3.R)
-<plot4.pdf, id=99, 578.16pt x 505.89pt>
-File: plot4.pdf Graphic file (type pdf)
-<use plot4.pdf>
-Package pdftex.def Info: plot4.pdf  used on input line 212.
-(pdftex.def)             Requested size: 328.82707pt x 287.71959pt.
- [6 <./plot4.pdf>] (./PS3.R) [7] (./PS3.aux)
+[8] (./PS3.R) [9 <./plot4.pdf>] [10] (./PS3.aux)
 Package rerunfilecheck Info: File `PS3.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27122 strings out of 476025
- 476922 string characters out of 5790017
- 1901388 words of memory out of 5000000
+ 27125 strings out of 476025
+ 476941 string characters out of 5790017
+ 1883388 words of memory out of 5000000
  46995 multiletter control sequences out of 15000+600000
  524025 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -965,10 +965,10 @@ exlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
 xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/tex
 live/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texli
 ve/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on PS3.pdf (7 pages, 893516 bytes).
+Output written on PS3.pdf (10 pages, 710962 bytes).
 PDF statistics:
- 202 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 68 named destinations out of 1000 (max. 500000)
+ 214 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
+ 71 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
