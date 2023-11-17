@@ -49,7 +49,7 @@ dev.off()
 
 #1.3
 res1 <- residuals(model1)
-res1 <- model1$residuals
+
 
 ### Question 2
 
