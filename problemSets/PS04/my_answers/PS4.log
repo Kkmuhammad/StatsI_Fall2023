@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.6)  1 DEC 2023 22:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.6)  1 DEC 2023 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -929,13 +929,13 @@ Package rerunfilecheck Info: File `PS4.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27041 strings out of 476025
- 475948 string characters out of 5790017
- 1898388 words of memory out of 5000000
- 46970 multiletter control sequences out of 15000+600000
+ 27051 strings out of 476025
+ 476067 string characters out of 5790017
+ 1908388 words of memory out of 5000000
+ 46974 multiletter control sequences out of 15000+600000
  524024 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,8n,89p,3235b,2197s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,8n,89p,3235b,2199s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
@@ -950,10 +950,10 @@ ve/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive
 /2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2
 023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on PS4.pdf (6 pages, 165414 bytes).
+Output written on PS4.pdf (6 pages, 166404 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
- 30 named destinations out of 1000 (max. 500000)
+ 144 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

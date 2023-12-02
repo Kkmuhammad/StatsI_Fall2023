@@ -98,14 +98,14 @@ help(Prestige)
 	
 	\item [(a)]
 	Create a new variable \texttt{professional} by recoding the variable \texttt{type} so that professionals are coded as $1$, and blue and white collar workers are coded as $0$ (Hint: \texttt{ifelse}).
-	\textbf{		The R script for regression is:}		\lstinputlisting[language=R, firstline=45, lastline=45]{PS4.R}  
+	\textbf{		The R script for regression is:}		\lstinputlisting[language=R, firstline=41, lastline=47]{PS4.R}  
 	\vspace{1cm}
 	
 	
 	\item [(b)]
 	Run a linear model with \texttt{prestige} as an outcome and \texttt{income}, \texttt{professional}, and the interaction of the two as predictors (Note: this is a continuous $\times$ dummy interaction.)
 	
-	\textbf{		The R script for regression is:}	\lstinputlisting[language=R, firstline=49, lastline=51]{PS4.R}  
+	\textbf{		The R script for regression is:}	\lstinputlisting[language=R, firstline=50, lastline=52]{PS4.R}  
 	
 	\vspace{1cm}
 	\item [(c)]
@@ -121,13 +121,13 @@ help(Prestige)
 	will be modest.Therefore an expected increase of one unit in  income will 
 	result in a slight increase of prestige. 
 	
-	\vspace{2cm}	
+	\newpage	
 	\item [(e)]
 	Interpret the coefficient for \texttt{professional}.
 	
 	\item[] B2 is the coefficient of professional variable. The summary statistics show that there is a positive relationship between both the professional (exploratory variable) and prestige (response variable). The p value suggests that they both are statistically significant and the prestige of individuals who are classified as professional (coded by 1) is approx. 38 units higher than individuals who are not professional (coded by 0).
 	
-	\newpage
+	\vspace{2cm}
 	\item [(f)]
 	What is the effect of a \$1,000 increase in income on prestige score for professional occupations? In other words, we are interested in the marginal effect of income when the variable \texttt{professional} takes the value of $1$. Calculate the change in $\hat{y}$ associated with a \$1,000 increase in income based on your answer for (c).
 	\item[]An increase of  \$ 1000 in income has a very low effect on prestige of professional individuals which can be calculated using B3 or the coefficient of interaction while a similar increase is different for non professional individuals as the
@@ -181,7 +181,7 @@ a precinct that was adjacent to a precinct in the treatment group (since people 
 \vspace{.5cm}
 \begin{enumerate}
 	\item [(a)] Use the results from a linear regression to determine whether having these yard signs in a precinct affects vote share (e.g., conduct a hypothesis test with $\alpha = .05$).
-	\textbf{		The R script for regression is:}		\lstinputlisting[language=R, firstline=58, lastline=64]{PS4.R}  
+	\textbf{		The R script for regression is:}		\lstinputlisting[language=R, firstline=59, lastline=65]{PS4.R}  
 	\newpage
 	\item[] The hypotheses may be set up to carry out hypothesis test:
 	
@@ -200,7 +200,7 @@ a precinct that was adjacent to a precinct in the treatment group (since people 
 	next to precincts with these yard signs affects vote
 	share (e.g., conduct a hypothesis test with $\alpha = .05$).
 	
-	\textbf{		The R script for regression is:}		\lstinputlisting[language=R, firstline=67, lastline=73]{PS4.R}
+	\textbf{		The R script for regression is:}		\lstinputlisting[language=R, firstline=68, lastline=74]{PS4.R}
 	\item[] The hypotheses may be set up to carry out hypothesis test:
 	
 	H0: There is no effect of adjacent lawn signs on vote share.
