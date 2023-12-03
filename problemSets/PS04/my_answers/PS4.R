@@ -45,6 +45,7 @@ help("Prestige")
 Prestige$professional <- ifelse(Prestige$type == "prof", 1, 0)
 head(Prestige)
 tail(Prestige)
+summary(Prestige)
 #1.2
 
 model <- lm(prestige ~ income + professional + income:professional, 
