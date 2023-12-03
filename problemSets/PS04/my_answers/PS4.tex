@@ -107,6 +107,20 @@ help(Prestige)
 	
 	\textbf{		The R script for regression is:}	\lstinputlisting[language=R, firstline=50, lastline=52]{PS4.R}  
 	
+	\textbf{		The summary statistics for regression are:}
+	\begin{verbatim}
+	Coefficients:         				Estimate		   	Std. Error   t value 		   Pr(>|t|)         
+	(Intercept)         				  21.1422589		  2.8044261     7.539 		   2.93e-11 ***
+	income               				 0.0031709  	 0.0004993   	 6.351 	   7.55e-09 ***
+	professional        			  37.7812800   4.2482744   	 8.893 	   4.14e-14 ***
+	income:professional   -0.0023257    0.0005675  	 -4.098 	   8.83e-05 ***
+
+	---Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+	Residual standard error: 8.012 on 94 degrees of freedom  
+	(4 observations deleted due to missingness)
+	Multiple R-squared:  0.7872,	Adjusted R-squared:  0.7804 
+	F-statistic: 115.9 on 3 and 94 DF,  p-value: < 2.2e-16
+	\end{verbatim} 
 	\vspace{1cm}
 	\item [(c)]
 	Write the prediction equation based on the result.
@@ -121,13 +135,13 @@ help(Prestige)
 	will be modest.Therefore an expected increase of one unit in  income will 
 	result in a slight increase of prestige. 
 	
-	\newpage	
+	\vspace{1cm}
 	\item [(e)]
 	Interpret the coefficient for \texttt{professional}.
 	
 	\item[] B2 is the coefficient of professional variable. The summary statistics show that there is a positive relationship between both the professional (exploratory variable) and prestige (response variable). The p value suggests that they both are statistically significant and the prestige of individuals who are classified as professional (coded by 1) is approx. 38 units higher than individuals who are not professional (coded by 0).
 	
-	\vspace{2cm}
+	\vspace{1cm}
 	\item [(f)]
 	What is the effect of a \$1,000 increase in income on prestige score for professional occupations? In other words, we are interested in the marginal effect of income when the variable \texttt{professional} takes the value of $1$. Calculate the change in $\hat{y}$ associated with a \$1,000 increase in income based on your answer for (c).
 	\item[]An increase of  \$ 1000 in income has a very low effect on prestige of professional individuals which can be calculated using B3 or the coefficient of interaction while a similar increase is different for non professional individuals as the
@@ -137,7 +151,7 @@ help(Prestige)
 	
 	
 	
-	\vspace{2cm}
+	\vspace{1cm}
 	\item [(g)]
 	What is the effect of changing one's occupations from non-professional to professional when her income is \$6,000? We are interested in the marginal effect of professional jobs when the variable \texttt{income} takes the value of $6,000$. Calculate the change in $\hat{y}$ based on your answer for (c).
 	
